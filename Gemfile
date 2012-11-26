@@ -37,20 +37,21 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-gem "hobo_support", :path => "/work/hobo32/hobo_support"
-gem "hobo_fields", :path => "/work/hobo32/hobo_fields"
-gem "dryml", :path => "/work/hobo32"
-gem "hobo", :path => "/work/hobo32"
-gem "hobo_rapid", :path => "/work/hobo32"
-gem "hobo_clean", :path => "/work/hobo32"
-gem "hobo_clean_admin", :path => "/work/hobo32"
-gem "hobo_jquery", :path => "/work/hobo32"
-gem "hobo_jquery_ui", :path => "/work/hobo32"
+gem "hobo_support", :git => "git://github.com/Hobo/hobo.git"
+gem "hobo_fields", :git => "git://github.com/Hobo/hobo.git"
+gem "dryml", :git => "git://github.com/Hobo/hobo.git"
+gem "hobo", :git => "git://github.com/Hobo/hobo.git"
+gem "hobo_rapid", :git => "git://github.com/Hobo/hobo.git"
+gem "hobo_clean", :git => "git://github.com/Hobo/hobo.git"
+gem "hobo_clean_admin", :git => "git://github.com/Hobo/hobo.git"
+gem "hobo_jquery", :git => "git://github.com/Hobo/hobo.git"
+gem "hobo_jquery_ui", :git => "git://github.com/Hobo/hobo.git"
 # Hobo has a lot of assets.   Stop cluttering the log in development mode.
 
 gem "quiet_assets", :group => :development
 # Hobo's version of will_paginate is required.
 
 gem "will_paginate", :git => "git://github.com/Hobo/will_paginate.git"
-gem "hobo_bootstrap", "2.0.0.pre6"
+gem "hobo_bootstrap", :git => "git://github.com/Hobo/hobo_bootstrap.git"
 gem "jquery-ui-themes", "~> 0.0.4"
+gem "hobo_bootstrap_ui", :git => "git://github.com/Hobo/hobo_bootstrap_ui.git"

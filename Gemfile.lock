@@ -1,11 +1,6 @@
 GIT
-  remote: git://github.com/Hobo/will_paginate.git
-  revision: cc7ef01551b94fe4f607e38929037234dc70bb62
-  specs:
-    will_paginate (3.0.4.hobo)
-
-PATH
-  remote: /work/hobo32
+  remote: git://github.com/Hobo/hobo.git
+  revision: bdac1b00391ac64f40851689c1fc8bb1236e3a99
   specs:
     dryml (2.0.0.pre6)
       actionpack (~> 3.2.0)
@@ -20,6 +15,8 @@ PATH
       hobo_jquery (= 2.0.0.pre6)
     hobo_clean_admin (2.0.0.pre6)
       hobo_clean (= 2.0.0.pre6)
+    hobo_fields (2.0.0.pre6)
+      hobo_support (= 2.0.0.pre6)
     hobo_jquery (2.0.0.pre6)
       hobo_rapid (= 2.0.0.pre6)
       jquery-rails (~> 2.0)
@@ -29,18 +26,31 @@ PATH
       jquery-ui-themes (~> 0.0.4)
     hobo_rapid (2.0.0.pre6)
       hobo (= 2.0.0.pre6)
-
-PATH
-  remote: /work/hobo32/hobo_fields
-  specs:
-    hobo_fields (2.0.0.pre6)
-      hobo_support (= 2.0.0.pre6)
-
-PATH
-  remote: /work/hobo32/hobo_support
-  specs:
     hobo_support (2.0.0.pre6)
       rails (~> 3.2.0)
+
+GIT
+  remote: git://github.com/Hobo/hobo_bootstrap.git
+  revision: 29c4ab6269357614abcf7d55dcb6b3828de54724
+  specs:
+    hobo_bootstrap (2.0.0.pre6)
+      bootstrap-sass (~> 2.1)
+      hobo (~> 2.0.0.pre6)
+      hobo_jquery (~> 2.0.0.pre6)
+      will_paginate-bootstrap (~> 0.2.1)
+
+GIT
+  remote: git://github.com/Hobo/hobo_bootstrap_ui.git
+  revision: d84bf4d8f95a9b6715f3ae38618e91cf37e0b0a8
+  specs:
+    hobo_bootstrap_ui (2.0.0.pre6)
+      hobo_bootstrap (~> 2.0.0.pre1)
+
+GIT
+  remote: git://github.com/Hobo/will_paginate.git
+  revision: cc7ef01551b94fe4f607e38929037234dc70bb62
+  specs:
+    will_paginate (3.0.4.hobo)
 
 GEM
   remote: https://rubygems.org/
@@ -87,11 +97,6 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.1)
-    hobo_bootstrap (2.0.0.pre6)
-      bootstrap-sass (~> 2.1)
-      hobo (~> 2.0.0.pre6)
-      hobo_jquery (~> 2.0.0.pre6)
-      will_paginate-bootstrap (~> 0.2.1)
     httparty (0.9.0)
       multi_json (~> 1.0)
       multi_xml
@@ -168,7 +173,8 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   dryml!
   hobo!
-  hobo_bootstrap (= 2.0.0.pre6)
+  hobo_bootstrap!
+  hobo_bootstrap_ui!
   hobo_clean!
   hobo_clean_admin!
   hobo_fields!
