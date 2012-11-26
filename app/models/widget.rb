@@ -9,6 +9,8 @@ class Widget < ActiveRecord::Base
   end
   attr_accessible :name, :quantity
 
+  self.per_page = 3
+
   # --- Permissions --- #
 
   def create_permitted?
