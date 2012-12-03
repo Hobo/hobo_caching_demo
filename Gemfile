@@ -55,3 +55,7 @@ gem "will_paginate", :git => "git://github.com/Hobo/will_paginate.git"
 gem "hobo_bootstrap", :git => "git://github.com/Hobo/hobo_bootstrap.git"
 gem "jquery-ui-themes", "~> 0.0.4"
 gem "hobo_bootstrap_ui", :git => "git://github.com/Hobo/hobo_bootstrap_ui.git"
+
+gem "debugger"
+gem "thin"
+gem 'turbolinks'

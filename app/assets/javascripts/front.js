@@ -7,6 +7,7 @@
 // code directly here, but if you do, it'll appear at the bottom of
 // the the compiled file.
 //
+//= require turbolinks
 //= require application
 //= require hobo_rapid
 //= require hobo_jquery

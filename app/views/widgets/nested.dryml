@@ -1,0 +1,22 @@
+<def tag="widget-row-nested">
+  <nested-cache methods="id,updated_at" route-on="&this" suffix="widget-row">
+    <tr>
+      <td><view/></td>
+      <td><view:quantity/></td>
+      <td><bootstrap-table-actions field="actions"/></td>
+    </tr>
+  </nested-cache>
+</def>
+
+<index-page without-bottom-page-nav>
+  <collection: replace>
+    <nested-cache suffix="table" query-params="search,sort,page" widgets="&this.map &:id">
+      <table-plus fields="this, quantity, actions">
+        <tr: replace>
+          <widget-row-nested/>
+        </tr:>
+        <actions-heading:></actions-heading:>
+      </table-plus>
+    </nested-cache>
+  </collection:>
+</index-page>

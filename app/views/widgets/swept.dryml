@@ -1,0 +1,22 @@
+<def tag="widget-row-swept">
+  <swept-cache route-on="&this" suffix="widget-row">
+    <tr>
+      <td><view/></td>
+      <td><view:quantity/></td>
+      <td><bootstrap-table-actions field="actions"/></td>
+    </tr>
+  </swept-cache>
+</def>
+
+<index-page without-bottom-page-nav>
+  <collection: replace>
+    <swept-cache dependencies="&[:all_widgets]" suffix="table" query-params="search,sort,page">
+      <table-plus fields="this, quantity, actions">
+        <tr: replace>
+          <widget-row-swept/>
+        </tr:>
+        <actions-heading:></actions-heading:>
+      </table-plus>
+    </swept-cache>
+  </collection:>
+</index-page>

@@ -1,0 +1,15 @@
+<index-page without-bottom-page-nav>
+  <collection: replace>
+    <hobo-cache suffix="table" query-params="search,sort,page" widgets="&this.map{|w| [w.id, w.updated_at]}">
+      <table-plus fields="this, quantity, actions">
+        <tr: replace>
+          <hobo-cache suffix="widget" widget="&this.id" updated-at="&this.updated_at">
+            <tr restore/>
+          </hobo-cache>
+        </tr:>
+        <actions-heading:></actions-heading:>
+        <actions-view:><bootstrap-table-actions/></actions-view:>
+      </table-plus>
+    </hobo-cache>
+  </collection:>
+</index-page>
